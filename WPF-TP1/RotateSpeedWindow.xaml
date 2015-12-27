@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF_TP1.SpeedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_TP1"
+        mc:Ignorable="d"
+        Title="SpeedWindow" Height="200" Width="400">
+    <Grid>
+        <TextBlock Text="Choose a rotation speed" 
+                   Style="{StaticResource ResourceKey=TitleTextBlock}"></TextBlock>
+        <Slider x:Name="speedSlider" 
+                Maximum="10" 
+                Minimum="0" 
+                TickFrequency="1" 
+                Width="300" 
+                IsSnapToTickEnabled="True" 
+                ValueChanged="SpeedSlider_ValueChanged" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,40,0,0"></Slider>
+        <TextBlock Text="{Binding ElementName=speedSlider, Path=Value}" 
+                   Style="{StaticResource IndicatorTextBlock}"
+                   Margin="0,60,0,0"></TextBlock>
+    </Grid>
+</Window>
