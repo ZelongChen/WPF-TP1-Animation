@@ -7,3 +7,7 @@ Demo 1
 Demo 2
 ====
 ![Demo 2](/WPF-TP1/Video/Demo-2.gif?raw=true "Demo 2")
+
+Demo complet
+====
+![Demo complet](/WPF-TP1/Video/Demo-complet.gif?raw=true "Demo complet")
